@@ -104,7 +104,7 @@ function greeting(obj) {
   let person = {
     title: "Mr",
     firstName: "Mike",
-    lastName: "Whalet",
+    lastName: "Whaley",
   };
   const { title: title } = person;
   const { firstName: firstName } = person;
@@ -113,7 +113,8 @@ function greeting(obj) {
   return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
-greeting();
+const printGreeting = (callback) => console.log(callback());
+printGreeting(greeting);
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
 /*
